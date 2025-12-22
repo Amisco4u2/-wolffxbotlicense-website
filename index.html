@@ -98,6 +98,27 @@
             
             <div class="section">
                 <h2>Choose Your Perfect Plan</h2>
+                
+                <div class="alert alert-info" style="background: linear-gradient(135deg, rgba(0, 136, 255, 0.2), rgba(0, 102, 204, 0.1)); border: 3px solid #0088ff; margin-bottom: 30px;">
+                    <h3 style="color: #00ff88; margin-bottom: 15px;">🏆 RECOMMENDED BROKER: EXNESS</h3>
+                    <p style="font-size: 1.1rem; margin-bottom: 15px;"><strong>Before purchasing, open a trading account with Exness - our recommended broker that works perfectly with Wolf FX EA!</strong></p>
+                    <div style="background: rgba(10, 14, 39, 0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
+                        <p style="margin-bottom: 10px;"><strong>Why Exness?</strong></p>
+                        <ul style="margin-left: 20px; margin-bottom: 15px;">
+                            <li>✅ Fully compatible with Wolf FX EA</li>
+                            <li>✅ Low spreads & fast execution</li>
+                            <li>✅ Reliable & regulated broker</li>
+                            <li>✅ Multiple account types</li>
+                            <li>✅ Excellent customer support</li>
+                        </ul>
+                        <p style="color: #ffa500; margin-bottom: 15px;"><strong>⚠️ Important:</strong> Your license will be bound to your Exness account, broker, and server for anti-piracy protection.</p>
+                    </div>
+                    <button class="btn" onclick="window.open('https://one.exnesstrack.net/a/ljlgrokcle', '_blank')" style="margin-top: 15px;">
+                        🚀 Open Exness Account Now
+                    </button>
+                    <p style="margin-top: 15px; font-size: 0.9rem; color: #8892a8;">After opening your Exness account, return here to purchase your license!</p>
+                </div>
+                
                 <div class="alert alert-info">
                     <strong>📝 Note:</strong> You must <span class="text-link" onclick="showPage('customer-auth')">create an account</span> before purchasing.
                 </div>
@@ -301,6 +322,15 @@
                 <h2>Purchase License</h2>
                 <p style="margin-bottom: 25px;">Plan: <span id="selected-plan-name" style="color: #00ff88; font-size: 1.5rem;"></span></p>
                 
+                <div class="alert alert-info" style="background: linear-gradient(135deg, rgba(0, 136, 255, 0.2), rgba(0, 102, 204, 0.1)); border: 3px solid #0088ff;">
+                    <h4 style="color: #00ff88; margin-bottom: 10px;">🏆 Using Exness Broker?</h4>
+                    <p style="margin-bottom: 10px;">Wolf FX EA works perfectly with Exness! If you don't have an Exness account yet:</p>
+                    <button class="btn btn-secondary btn-small" onclick="window.open('https://one.exnesstrack.net/a/ljlgrokcle', '_blank')" style="margin: 10px 0;">
+                        Open Exness Account
+                    </button>
+                    <p style="font-size: 0.9rem; color: #8892a8; margin-top: 10px;">You can use other brokers too, but Exness is highly recommended for best performance.</p>
+                </div>
+                
                 <div class="alert alert-info">
                     <strong>⚠️ Anti-Piracy Protection:</strong> License will be bound to your broker and server.
                 </div>
@@ -398,7 +428,10 @@
             // Auto-login after signup
             currentCustomer = {email, password, name, created: new Date().toISOString()};
             
-            alert('✅ Account created successfully!\n\nYou are now logged in. Please select a pricing plan to continue.');
+            // Send welcome email with Exness recommendation
+            sendWelcomeEmail(name, email);
+            
+            alert('✅ Account created successfully!\n\nYou are now logged in. Please select a pricing plan to continue.\n\n📧 Check your email for important setup information!');
             
             // Clear form
             document.getElementById('cust-signup-name').value = '';
@@ -408,6 +441,21 @@
             
             // Redirect to homepage to select plan
             showPage('home');
+        }
+        
+        function sendWelcomeEmail(name, email) {
+            emailjs.send('YOUR_SERVICE_ID', 'YOUR_WELCOME_TEMPLATE_ID', {
+                to_email: email,
+                customer_name: name,
+                exness_link: 'https://one.exnesstrack.net/a/ljlgrokcle',
+                login_url: window.location.origin,
+                support_email: 'aminfx.gh@gmail.com',
+                whatsapp_link: 'https://chat.whatsapp.com/GN3XhxcknMcA9PjOIBumPS'
+            }).then(() => {
+                console.log('Welcome email sent to:', email);
+            }).catch(err => {
+                console.error('Welcome email failed:', err);
+            });
         }
         
         function customerLogin() {
