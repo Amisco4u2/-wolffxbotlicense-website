@@ -81,6 +81,7 @@
             <p class="subtitle">Advanced Automated Trading Solutions</p>
             <div class="nav">
                 <button class="nav-btn" onclick="showPage('home')">🏠 Home</button>
+                <button class="nav-btn" onclick="showPage('purchase')">💰 Plans & Pricing</button>
                 <button class="nav-btn" onclick="showPage('about')">ℹ️ About EA</button>
                 <button class="nav-btn" onclick="showPage('customer-auth')">👤 Customer Area</button>
                 <button class="nav-btn" onclick="showPage('admin-login')">🔐 Admin</button>
@@ -89,17 +90,78 @@
     </header>
 
     <div class="container">
-        <!-- HOME -->
+        <!-- HOME PAGE -->
         <div id="home" class="page active">
             <div class="hero">
-                <h2>🚀 Transform Your Trading Today</h2>
+                <h2>🐺 Professional Forex Trading Automation</h2>
                 <p>Join 500+ successful traders using our proven Expert Advisor</p>
+                <div style="margin-top: 30px;">
+                    <button class="btn" onclick="showPage('customer-auth')" style="max-width: 400px; display: inline-block; margin: 10px;">
+                        🚀 Get Started Now
+                    </button>
+                    <button class="btn btn-secondary" onclick="showPage('purchase')" style="max-width: 400px; display: inline-block; margin: 10px;">
+                        📊 View Plans & Pricing
+                    </button>
+                </div>
             </div>
             
+            <!-- COMPREHENSIVE EA INFORMATION -->
             <div class="section">
-                <h2>Choose Your Perfect Plan</h2>
+                <h2>🤖 What is Wolf FX Expert Advisor?</h2>
+                <p style="font-size: 1.2rem; margin-bottom: 20px;">Wolf FX EA is a sophisticated automated trading system designed specifically for the Forex market. It executes trades on your behalf 24/7, using advanced algorithms to identify and capitalize on profitable trading opportunities without emotional decision-making.</p>
                 
-                <div class="alert alert-info" style="background: linear-gradient(135deg, rgba(0, 136, 255, 0.2), rgba(0, 102, 204, 0.1)); border: 3px solid #0088ff; margin-bottom: 30px;">
+                <div class="hero" style="text-align: left; padding: 30px;">
+                    <h3 style="color: #00ff88; margin-bottom: 20px;">💡 How Does It Work?</h3>
+                    <p style="font-size: 1.1rem; line-height: 1.8;">An Expert Advisor (EA) is a plug-in for MetaTrader 5 (MT5) that runs automated trading strategies. Once installed on your MT5 platform, Wolf FX EA continuously monitors the market, analyzes price movements, identifies trading setups, and executes trades automatically based on pre-programmed rules and risk management parameters.</p>
+                    <p style="font-size: 1.1rem; line-height: 1.8; margin-top: 15px;"><strong>Think of it as having a professional trader working for you 24/7</strong> - never missing opportunities, never trading emotionally, and always following your risk management rules.</p>
+                </div>
+            </div>
+            
+            <!-- KEY FEATURES -->
+            <div class="section">
+                <h2>⭐ Why Choose Wolf FX EA?</h2>
+                <div class="feature-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; margin-top: 30px;">
+                    <div style="background: linear-gradient(135deg, #1a1e37, #0a0e27); padding: 30px; border-radius: 15px; border: 2px solid #444;">
+                        <div style="font-size: 3rem; margin-bottom: 15px;">⚡</div>
+                        <h3 style="color: #00ff88; margin-bottom: 15px;">Lightning Fast Execution</h3>
+                        <p>Execute trades in milliseconds. Our EA captures opportunities that manual traders would miss, giving you an edge in fast-moving markets.</p>
+                    </div>
+                    
+                    <div style="background: linear-gradient(135deg, #1a1e37, #0a0e27); padding: 30px; border-radius: 15px; border: 2px solid #444;">
+                        <div style="font-size: 3rem; margin-bottom: 15px;">🛡️</div>
+                        <h3 style="color: #00ff88; margin-bottom: 15px;">Advanced Risk Management</h3>
+                        <p>Built-in stop-loss, take-profit, and trailing stop features protect your capital. Trade with confidence knowing your risk is always controlled.</p>
+                    </div>
+                    
+                    <div style="background: linear-gradient(135deg, #1a1e37, #0a0e27); padding: 30px; border-radius: 15px; border: 2px solid #444;">
+                        <div style="font-size: 3rem; margin-bottom: 15px;">🎯</div>
+                        <h3 style="color: #00ff88; margin-bottom: 15px;">Proven Strategy</h3>
+                        <p>Thoroughly tested on multiple currency pairs with consistent profitability. Our strategy adapts to different market conditions.</p>
+                    </div>
+                    
+                    <div style="background: linear-gradient(135deg, #1a1e37, #0a0e27); padding: 30px; border-radius: 15px; border: 2px solid #444;">
+                        <div style="font-size: 3rem; margin-bottom: 15px;">🔄</div>
+                        <h3 style="color: #00ff88; margin-bottom: 15px;">24/7 Trading</h3>
+                        <p>Never miss a trading opportunity. The EA works around the clock, monitoring markets and executing trades even while you sleep.</p>
+                    </div>
+                    
+                    <div style="background: linear-gradient(135deg, #1a1e37, #0a0e27); padding: 30px; border-radius: 15px; border: 2px solid #444;">
+                        <div style="font-size: 3rem; margin-bottom: 15px;">📊</div>
+                        <h3 style="color: #00ff88; margin-bottom: 15px;">Multi-Pair Trading</h3>
+                        <p>Trade multiple currency pairs simultaneously for better diversification and more opportunities. Maximize your potential returns.</p>
+                    </div>
+                    
+                    <div style="background: linear-gradient(135deg, #1a1e37, #0a0e27); padding: 30px; border-radius: 15px; border: 2px solid #444;">
+                        <div style="font-size: 3rem; margin-bottom: 15px;">🔐</div>
+                        <h3 style="color: #00ff88; margin-bottom: 15px;">Secure & Licensed</h3>
+                        <p>Each license is bound to your MT5 account, broker, and server. Maximum security prevents unauthorized use and piracy.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- EXNESS BROKER RECOMMENDATION -->
+            <div class="section">
+                <div class="alert alert-info" style="background: linear-gradient(135deg, rgba(0, 136, 255, 0.2), rgba(0, 102, 204, 0.1)); border: 3px solid #0088ff;">
                     <h3 style="color: #00ff88; margin-bottom: 15px;">🏆 RECOMMENDED BROKER: EXNESS</h3>
                     <p style="font-size: 1.1rem; margin-bottom: 15px;"><strong>Before purchasing, open a trading account with Exness - our recommended broker that works perfectly with Wolf FX EA!</strong></p>
                     <div style="background: rgba(10, 14, 39, 0.5); padding: 20px; border-radius: 10px; margin: 15px 0;">
@@ -108,51 +170,263 @@
                             <li>✅ Fully compatible with Wolf FX EA</li>
                             <li>✅ Low spreads & fast execution</li>
                             <li>✅ Reliable & regulated broker</li>
-                            <li>✅ Multiple account types</li>
-                            <li>✅ Excellent customer support</li>
+                            <li>✅ Multiple account types (Standard, Pro, Raw Spread)</li>
+                            <li>✅ Excellent 24/7 customer support</li>
+                            <li>✅ Easy deposits and withdrawals</li>
                         </ul>
-                        <p style="color: #ffa500; margin-bottom: 15px;"><strong>⚠️ Important:</strong> Your license will be bound to your Exness account, broker, and server for anti-piracy protection.</p>
+                        <p style="color: #ffa500; margin-bottom: 15px;"><strong>⚠️ Important:</strong> Your license will be bound to your broker account and server for anti-piracy protection.</p>
                     </div>
                     <button class="btn" onclick="window.open('https://one.exnesstrack.net/a/ljlgrokcle', '_blank')" style="margin-top: 15px;">
                         🚀 Open Exness Account Now
                     </button>
-                    <p style="margin-top: 15px; font-size: 0.9rem; color: #8892a8;">After opening your Exness account, return here to purchase your license!</p>
+                    <p style="margin-top: 15px; font-size: 0.9rem; color: #8892a8;">Opening an account takes only 5 minutes! Start with a demo account to test the EA risk-free.</p>
+                </div>
+            </div>
+            
+            <!-- WHAT YOU GET -->
+            <div class="section">
+                <h2>🎁 What You Get With Your License</h2>
+                <div style="background: rgba(0, 255, 136, 0.05); padding: 30px; border-radius: 15px; border: 2px solid #00ff88; margin-top: 20px;">
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px;">
+                        <div>
+                            <h4 style="color: #00ff88; margin-bottom: 10px;">✅ Wolf FX EA v3.25</h4>
+                            <p>Latest version with all features and optimizations</p>
+                        </div>
+                        <div>
+                            <h4 style="color: #00ff88; margin-bottom: 10px;">✅ Installation Guide</h4>
+                            <p>Step-by-step instructions for quick setup</p>
+                        </div>
+                        <div>
+                            <h4 style="color: #00ff88; margin-bottom: 10px;">✅ Strategy Guide</h4>
+                            <p>Best practices for using the EA effectively</p>
+                        </div>
+                        <div>
+                            <h4 style="color: #00ff88; margin-bottom: 10px;">✅ Risk Management Templates</h4>
+                            <p>Pre-configured settings for different risk levels</p>
+                        </div>
+                        <div>
+                            <h4 style="color: #00ff88; margin-bottom: 10px;">✅ WhatsApp Community</h4>
+                            <p>Join 500+ traders sharing insights and strategies</p>
+                        </div>
+                        <div>
+                            <h4 style="color: #00ff88; margin-bottom: 10px;">✅ Email Support</h4>
+                            <p>Direct help when you need it from our team</p>
+                        </div>
+                        <div>
+                            <h4 style="color: #00ff88; margin-bottom: 10px;">✅ Priority Updates</h4>
+                            <p>Get new versions and improvements first</p>
+                        </div>
+                        <div>
+                            <h4 style="color: #00ff88; margin-bottom: 10px;">✅ VPS Recommendation</h4>
+                            <p>$6/month VPS for 24/7 uninterrupted trading</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- WHY SUBSCRIBE -->
+            <div class="section">
+                <h2>💎 Why Choose a Subscription Model?</h2>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; margin-top: 20px;">
+                    <div style="background: linear-gradient(135deg, rgba(0, 136, 255, 0.1), rgba(0, 102, 204, 0.05)); padding: 25px; border-radius: 12px; border: 2px solid #0088ff;">
+                        <h3 style="color: #0088ff; margin-bottom: 15px;">🔒 Maximum Security</h3>
+                        <p>Your EA is bound to YOUR MT5 account, broker, AND server. Nobody else can use your license. This prevents piracy and ensures you always have the latest, secure version.</p>
+                    </div>
+                    <div style="background: linear-gradient(135deg, rgba(0, 136, 255, 0.1), rgba(0, 102, 204, 0.05)); padding: 25px; border-radius: 12px; border: 2px solid #0088ff;">
+                        <h3 style="color: #0088ff; margin-bottom: 15px;">🔄 Continuous Updates</h3>
+                        <p>Markets change, and so does our EA. Your subscription funds ongoing development: strategy refinements, bug fixes, new features, and performance optimizations.</p>
+                    </div>
+                    <div style="background: linear-gradient(135deg, rgba(0, 136, 255, 0.1), rgba(0, 102, 204, 0.05)); padding: 25px; border-radius: 12px; border: 2px solid #0088ff;">
+                        <h3 style="color: #0088ff; margin-bottom: 15px;">💬 Dedicated Support</h3>
+                        <p>Active licenses receive priority support via email and WhatsApp. Get help quickly when you need it most, including strategy advice and troubleshooting.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- ANTI-PIRACY -->
+            <div class="section">
+                <h2>🔐 Advanced Anti-Piracy Protection</h2>
+                <div class="alert alert-info" style="background: rgba(255, 165, 0, 0.1); border-color: #ffa500; color: #ffcc88;">
+                    <h3 style="color: #ffa500; margin-bottom: 15px;">How Broker & Server Binding Works</h3>
+                    <p style="margin-bottom: 15px;">When you purchase a license, it's permanently bound to:</p>
+                    <ul style="margin-left: 25px; margin-bottom: 15px;">
+                        <li><strong>Your MT5 Account Number</strong> - Unique to you</li>
+                        <li><strong>Your Broker Name</strong> - e.g., Exness, IC Markets</li>
+                        <li><strong>Your Server Name</strong> - e.g., Exness-MT5Real3</li>
+                    </ul>
+                    <p style="margin-bottom: 15px;"><strong>What This Means:</strong></p>
+                    <ul style="margin-left: 25px;">
+                        <li>✅ Your license is exclusively yours - cannot be shared</li>
+                        <li>✅ Works ONLY on your specified broker and server</li>
+                        <li>✅ Prevents unauthorized copying and distribution</li>
+                        <li>✅ Ensures you get dedicated support for your setup</li>
+                        <li>✅ Protects our development and your investment</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- HOW IT WORKS -->
+            <div class="section">
+                <h2>🚀 Getting Started is Easy</h2>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-top: 30px;">
+                    <div style="background: linear-gradient(135deg, #1a1e37, #0a0e27); padding: 25px; border-radius: 12px; border: 2px solid #00ff88; text-align: center;">
+                        <div style="font-size: 3rem; margin-bottom: 10px;">1️⃣</div>
+                        <h3 style="color: #00ff88; margin-bottom: 10px;">Create Account</h3>
+                        <p>Sign up in 30 seconds with your email</p>
+                    </div>
+                    <div style="background: linear-gradient(135deg, #1a1e37, #0a0e27); padding: 25px; border-radius: 12px; border: 2px solid #00ff88; text-align: center;">
+                        <div style="font-size: 3rem; margin-bottom: 10px;">2️⃣</div>
+                        <h3 style="color: #00ff88; margin-bottom: 10px;">Open Broker Account</h3>
+                        <p>Get an Exness account (5 minutes)</p>
+                    </div>
+                    <div style="background: linear-gradient(135deg, #1a1e37, #0a0e27); padding: 25px; border-radius: 12px; border: 2px solid #00ff88; text-align: center;">
+                        <div style="font-size: 3rem; margin-bottom: 10px;">3️⃣</div>
+                        <h3 style="color: #00ff88; margin-bottom: 10px;">Choose Your Plan</h3>
+                        <p>Select the subscription that fits your needs</p>
+                    </div>
+                    <div style="background: linear-gradient(135deg, #1a1e37, #0a0e27); padding: 25px; border-radius: 12px; border: 2px solid #00ff88; text-align: center;">
+                        <div style="font-size: 3rem; margin-bottom: 10px;">4️⃣</div>
+                        <h3 style="color: #00ff88; margin-bottom: 10px;">Make Payment</h3>
+                        <p>Pay via crypto or mobile money</p>
+                    </div>
+                    <div style="background: linear-gradient(135deg, #1a1e37, #0a0e27); padding: 25px; border-radius: 12px; border: 2px solid #00ff88; text-align: center;">
+                        <div style="font-size: 3rem; margin-bottom: 10px;">5️⃣</div>
+                        <h3 style="color: #00ff88; margin-bottom: 10px;">Get Activated</h3>
+                        <p>Receive your license key via email (24hrs)</p>
+                    </div>
+                    <div style="background: linear-gradient(135deg, #1a1e37, #0a0e27); padding: 25px; border-radius: 12px; border: 2px solid #00ff88; text-align: center;">
+                        <div style="font-size: 3rem; margin-bottom: 10px;">6️⃣</div>
+                        <h3 style="color: #00ff88; margin-bottom: 10px;">Start Trading!</h3>
+                        <p>Install EA and begin automated trading</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- TESTIMONIALS / STATS -->
+            <div class="section">
+                <h2>📈 Join Our Success Story</h2>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin-top: 30px;">
+                    <div style="text-align: center; padding: 30px; background: linear-gradient(135deg, rgba(0, 255, 136, 0.1), rgba(0, 204, 106, 0.05)); border-radius: 15px; border: 2px solid #00ff88;">
+                        <div style="font-size: 3.5rem; font-weight: bold; color: #00ff88; margin-bottom: 10px;">500+</div>
+                        <div style="color: #8892a8; font-size: 1.1rem;">Active Traders</div>
+                    </div>
+                    <div style="text-align: center; padding: 30px; background: linear-gradient(135deg, rgba(0, 255, 136, 0.1), rgba(0, 204, 106, 0.05)); border-radius: 15px; border: 2px solid #00ff88;">
+                        <div style="font-size: 3.5rem; font-weight: bold; color: #00ff88; margin-bottom: 10px;">24/7</div>
+                        <div style="color: #8892a8; font-size: 1.1rem;">Trading Uptime</div>
+                    </div>
+                    <div style="text-align: center; padding: 30px; background: linear-gradient(135deg, rgba(0, 255, 136, 0.1), rgba(0, 204, 106, 0.05)); border-radius: 15px; border: 2px solid #00ff88;">
+                        <div style="font-size: 3.5rem; font-weight: bold; color: #00ff88; margin-bottom: 10px;">3.25</div>
+                        <div style="color: #8892a8; font-size: 1.1rem;">Latest Version</div>
+                    </div>
+                    <div style="text-align: center; padding: 30px; background: linear-gradient(135deg, rgba(0, 255, 136, 0.1), rgba(0, 204, 106, 0.05)); border-radius: 15px; border: 2px solid #00ff88;">
+                        <div style="font-size: 3.5rem; font-weight: bold; color: #00ff88; margin-bottom: 10px;">100%</div>
+                        <div style="color: #8892a8; font-size: 1.1rem;">Secure & Bound</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- FINAL CTA -->
+            <div class="section" style="text-align: center; background: linear-gradient(135deg, rgba(0, 255, 136, 0.1), rgba(0, 204, 106, 0.05)); border: 3px solid #00ff88;">
+                <h2 style="margin-bottom: 20px;">Ready to Transform Your Trading?</h2>
+                <p style="font-size: 1.2rem; margin-bottom: 30px; color: #8892a8;">Join hundreds of successful traders using Wolf FX EA</p>
+                <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+                    <button class="btn" onclick="showPage('customer-auth')" style="max-width: 300px;">
+                        🚀 Create Account Now
+                    </button>
+                    <button class="btn btn-secondary" onclick="showPage('purchase')" style="max-width: 300px;">
+                        📊 View Plans & Pricing
+                    </button>
+                </div>
+                <p style="margin-top: 20px; font-size: 0.9rem; color: #8892a8;">Already have an account? <span class="text-link" onclick="showPage('customer-auth')">Login here</span></p>
+            </div>
+        </div>
+
+        <!-- PURCHASE / PLANS PAGE -->
+        <div id="purchase" class="page">
+            <div class="hero">
+                <h2>📊 Choose Your Perfect Plan</h2>
+                <p>Select the subscription that fits your trading goals</p>
+            </div>
+            
+            <div class="section">
+                <div class="alert alert-info" style="background: linear-gradient(135deg, rgba(0, 136, 255, 0.2), rgba(0, 102, 204, 0.1)); border: 3px solid #0088ff; margin-bottom: 30px;">
+                    <h3 style="color: #00ff88; margin-bottom: 15px;">🏆 RECOMMENDED BROKER: EXNESS</h3>
+                    <p style="font-size: 1.1rem; margin-bottom: 15px;"><strong>Before purchasing, open a trading account with Exness!</strong></p>
+                    <button class="btn" onclick="window.open('https://one.exnesstrack.net/a/ljlgrokcle', '_blank')" style="margin-top: 15px; max-width: 300px;">
+                        🚀 Open Exness Account Now
+                    </button>
                 </div>
                 
                 <div class="alert alert-info">
-                    <strong>📝 Note:</strong> You must <span class="text-link" onclick="showPage('customer-auth')">create an account</span> before purchasing.
+                    <strong>📝 Note:</strong> You must <span class="text-link" onclick="showPage('customer-auth')">create an account and login</span> before purchasing.
                 </div>
+                
                 <div class="pricing-grid">
                     <div class="pricing-card">
                         <div class="plan-name">Weekly</div>
                         <div class="plan-price">$50</div>
                         <p>7 Days Access</p>
+                        <ul style="list-style: none; padding: 0; margin: 20px 0; text-align: left;">
+                            <li style="padding: 5px 0;">✅ Full EA Access</li>
+                            <li style="padding: 5px 0;">✅ Email Support</li>
+                            <li style="padding: 5px 0;">✅ Perfect for Testing</li>
+                        </ul>
                         <button class="btn" onclick="checkLoginAndPurchase('weekly', 50, 7)">Start Weekly</button>
                     </div>
                     <div class="pricing-card">
                         <div class="plan-name">Monthly</div>
                         <div class="plan-price">$150</div>
                         <p>30 Days Access</p>
+                        <ul style="list-style: none; padding: 0; margin: 20px 0; text-align: left;">
+                            <li style="padding: 5px 0;">✅ Full EA Access</li>
+                            <li style="padding: 5px 0;">✅ Priority Support</li>
+                            <li style="padding: 5px 0;">✅ Strategy Tips</li>
+                            <li style="padding: 5px 0;">⭐ Most Popular</li>
+                        </ul>
                         <button class="btn" onclick="checkLoginAndPurchase('monthly', 150, 30)">Start Monthly</button>
                     </div>
                     <div class="pricing-card">
                         <div class="plan-name">Quarterly</div>
                         <div class="plan-price">$350</div>
                         <p>90 Days • Save $100</p>
+                        <ul style="list-style: none; padding: 0; margin: 20px 0; text-align: left;">
+                            <li style="padding: 5px 0;">✅ Full EA Access</li>
+                            <li style="padding: 5px 0;">✅ Priority Support</li>
+                            <li style="padding: 5px 0;">✅ Strategy Guide</li>
+                            <li style="padding: 5px 0;">💎 Best Value</li>
+                        </ul>
                         <button class="btn" onclick="checkLoginAndPurchase('quarterly', 350, 90)">Start Quarterly</button>
                     </div>
                     <div class="pricing-card">
                         <div class="plan-name">Annual</div>
                         <div class="plan-price">$1,499</div>
                         <p>365 Days • Save $301</p>
+                        <ul style="list-style: none; padding: 0; margin: 20px 0; text-align: left;">
+                            <li style="padding: 5px 0;">✅ Full EA Access</li>
+                            <li style="padding: 5px 0;">✅ VIP Support</li>
+                            <li style="padding: 5px 0;">✅ Free Updates</li>
+                            <li style="padding: 5px 0;">🏆 Maximum Savings</li>
+                        </ul>
                         <button class="btn" onclick="checkLoginAndPurchase('annual', 1499, 365)">Start Annual</button>
                     </div>
                     <div class="pricing-card">
                         <div class="plan-name">Lifetime</div>
                         <div class="plan-price">$3,000</div>
                         <p>Forever Access</p>
-                        <button class="btn" onclick="checkLoginAndPurchase('lifetime', 3000, 36500)">Get Lifetime</button>
+                        <ul style="list-style: none; padding: 0; margin: 20px 0; text-align: left;">
+                            <li style="padding: 5px 0;">✅ Lifetime Access</li>
+                            <li style="padding: 5px 0;">✅ VIP Support</li>
+                            <li style="padding: 5px 0;">✅ All Updates Free</li>
+                            <li style="padding: 5px 0;">👑 Ultimate Package</li>
+                        </ul>
+                        <button class="btn" onclick="checkLoginAndPurchase('lifetime', 3000, 36500)">Get Lifetime Access</button>
                     </div>
+                </div>
+                
+                <div style="text-align: center; margin-top: 40px;">
+                    <button class="btn btn-secondary" onclick="showPage('home')" style="max-width: 300px;">
+                        ← Back to Home
+                    </button>
                 </div>
             </div>
         </div>
@@ -695,42 +969,59 @@
         
         function approveLicense(idx) {
             const lic = DB.licenses[idx];
-            if (!confirm(`✅ APPROVE LICENSE?\n\nVerify payment first!\n\nCustomer: ${lic.name}\nPlan: ${lic.plan.toUpperCase()}\nAmount: $${lic.price}\nPayment: ${lic.method.toUpperCase()}\nTX ID: ${lic.txid}\n\nHave you verified this transaction ID in your wallet?`)) return;
+            if (!confirm(`✅ APPROVE LICENSE?\n\nVerify payment first!\n\nCustomer: ${lic.name}\nEmail: ${lic.email}\nPlan: ${lic.plan.toUpperCase()}\nAmount: $${lic.price}\nPayment: ${lic.method.toUpperCase()}\nTX ID: ${lic.txid}\nBroker: ${lic.broker}\nServer: ${lic.server}\n\nHave you verified this transaction ID in your ${lic.method.toUpperCase()} wallet/account?`)) return;
             
             // Generate license key NOW (after admin verification)
             const licenseKey = 'WOLF-' + generateRandomString(4) + '-' + generateRandomString(4) + '-' + generateRandomString(4) + '-' + generateRandomString(4);
             
             lic.licenseKey = licenseKey;
             lic.status = 'active';
+            lic.approved = new Date().toISOString();
             lic.activationTime = new Date().toISOString();
+            
+            // Calculate expiry date
             const expiry = new Date();
             expiry.setDate(expiry.getDate() + lic.durationDays);
             lic.expiry = expiry.toISOString().split('T')[0];
             
             saveDB();
             
-            // Send email with VPS info
+            // Send activation email with comprehensive details
             const vpsLink = 'https://my.hyonix.com/aff.php?aff=3926';
+            const exnessLink = 'https://one.exnesstrack.net/a/ljlgrokcle';
+            const whatsappLink = 'https://chat.whatsapp.com/GN3XhxcknMcA9PjOIBumPS';
+            const downloadLink = 'https://yoursite.com/download'; // Update with actual link
+            
             emailjs.send('YOUR_SERVICE_ID', 'YOUR_ACTIVATION_TEMPLATE_ID', {
                 to_email: lic.email,
                 customer_name: lic.name,
                 license_key: licenseKey,
                 plan: lic.plan.toUpperCase(),
+                price: lic.price,
+                duration_days: lic.durationDays,
                 expiry_date: lic.expiry,
                 broker: lic.broker,
                 server: lic.server,
                 mt5_account: lic.mt5,
+                country: lic.country,
+                whatsapp_number: lic.whatsapp,
+                payment_method: lic.method.toUpperCase(),
+                transaction_id: lic.txid,
                 vps_link: vpsLink,
                 vps_price: '$6',
-                vps_message: 'For uninterrupted 24/7 trading, we recommend using a VPS. Get started for as low as $6/month with our recommended provider.',
-                download_link: 'https://yoursite.com/download',
-                whatsapp_link: 'https://chat.whatsapp.com/GN3XhxcknMcA9PjOIBumPS'
+                vps_message: 'For uninterrupted 24/7 trading and maximum EA performance, we highly recommend using a VPS. Get started for as low as $6/month.',
+                exness_link: exnessLink,
+                download_link: downloadLink,
+                whatsapp_link: whatsappLink,
+                support_email: 'aminfx.gh@gmail.com',
+                activation_date: new Date().toLocaleDateString(),
+                login_url: window.location.origin
             }).then(() => {
-                alert(`✅ LICENSE APPROVED!\n\nLicense Key Generated: ${licenseKey}\n\nActivation email sent to customer with:\n- License key\n- Broker/Server binding info\n- VPS recommendation\n- Download link`);
+                alert(`✅ LICENSE APPROVED SUCCESSFULLY!\n\n━━━━━━━━━━━━━━━━━━━━━━━━\nLICENSE DETAILS\n━━━━━━━━━━━━━━━━━━━━━━━━\n\nLicense Key: ${licenseKey}\nCustomer: ${lic.name}\nEmail: ${lic.email}\nPlan: ${lic.plan.toUpperCase()}\nExpiry: ${lic.expiry}\n\n━━━━━━━━━━━━━━━━━━━━━━━━\nEMAIL SENT\n━━━━━━━━━━━━━━━━━━━━━━━━\n\n✅ Activation email sent with:\n• License key\n• Broker/Server binding info\n• VPS recommendation\n• Exness broker link\n• Download link\n• Installation guide\n\nCustomer ready to trade!`);
                 loadAdminDashboard();
             }).catch(err => {
-                alert(`✅ LICENSE APPROVED!\n\nLicense Key: ${licenseKey}\n\n⚠️ Email failed to send.\nPlease manually notify customer:\n${lic.email}\n\nLicense: ${licenseKey}`);
                 console.error('Email error:', err);
+                alert(`✅ LICENSE APPROVED!\n\nLicense Key: ${licenseKey}\n\n⚠️ EMAIL FAILED\n\nManually notify:\n${lic.email}\n\nLicense: ${licenseKey}\nExpiry: ${lic.expiry}\n\nError: ${err.text || 'Check EmailJS config'}`);
                 loadAdminDashboard();
             });
         }
